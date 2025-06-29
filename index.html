@@ -6,9 +6,11 @@
     <title>BrantBytes</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="js/main.js"></script>
     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.16/build/spline-viewer.js"></script>
     <script src="https://kit.fontawesome.com/1c6db54935.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
@@ -51,10 +53,10 @@
             </div>
         </div>
         <div class="projects">
-            <h1>
+            <h1 data-aos="fade-right">
                 Some Projects   
             </h1>
-            <div class="works">
+            <div class="works" data-aos="zoom-in">
                 <div class="swiper mySwiper java_proj">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide"></div>
@@ -69,12 +71,16 @@
                         Java Application
                     </h2>
                     <p>
-                        A powerful Java-based product ordering application integrated with QR code technology, designed for secure and efficient data processing 
+                        A powerful Java-based product ordering application integrated with QR code technology, designed for efficient data processing 
                     </p>
+                    <div class="prog_lang">
+                        <span>Java</span>
+                        <span>MySQL</span>
+                    </div>
                 </div>
             </div>
-            <div class="works">
-                <div class="swiper mySwiper php_emp">
+            <div class="works" data-aos="zoom-out-up">
+                <div class="swiper mySwiper php_emp">  
                     <div class="swiper-wrapper">
                         <div class="swiper-slide"></div>
                         <div class="swiper-slide"></div>
@@ -93,7 +99,7 @@
                     
                 </div>
             </div>
-            <div class="works">
+            <div class="works" data-aos="zoom-out-up">
                 <div class="swiper mySwiper capstone">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide"></div>
@@ -111,7 +117,7 @@
                     </p>
                 </div>
             </div>
-            <div class="works">
+            <div class="works" >
                 <div class="swiper mySwiper tetra">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide"></div>
@@ -132,6 +138,7 @@
         </div>
     </div>
     <script>
+        AOS.init();
         var swiper = new Swiper(".mySwiper", {
             effect: "cards",
             grabCursor: true,
