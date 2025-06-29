@@ -160,40 +160,31 @@ header nav ul {
     font-size: 22px;
     font-weight: bold;
     color: #fff;
-}
-.projects .works .java_proj .swiper-wrapper .swiper-slide:nth-child(1) {
-    background-image: url('../image/java_login.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+}
+.projects .works .java_proj .swiper-wrapper .swiper-slide:nth-child(1) {
+    background-image: url('../image/java_login.png');
 }
 
 .projects .works .java_proj .swiper-wrapper .swiper-slide:nth-child(2) {
     background-image: url('../image/java_newAccount.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 .projects .works .java_proj .swiper-wrapper .swiper-slide:nth-child(3) {
     background-image: url('../image/java_shopnow.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+    
 }
 
 .projects .works .java_proj .swiper-wrapper .swiper-slide:nth-child(4) {
     background-image: url('../image/java_menu.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+    
 }
 
-.projects .works .swiper .swiper-wrapper .swiper-slide:nth-child(5) {
+.projects .works .java_proj .swiper-wrapper .swiper-slide:nth-child(5) {
     background-image: url('../image/java_receipt.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+    
 }
 .projects .works .description {
     padding-top: 40px;
@@ -211,4 +202,47 @@ header nav ul {
 }
 .projects .works:nth-child(odd) .description {
     margin-left: calc(100% - (560px + 330px));
+}
+
+/* 2nd Project */
+.projects .works .php_emp .swiper-wrapper .swiper-slide:nth-child(1) {
+    background-image: url('../image/emp_login.png');
+}
+.projects .works .php_emp .swiper-wrapper .swiper-slide:nth-child(2) {
+    background-image: url('../image/emp_landing.png');
+}
+.projects .works .php_emp .swiper-wrapper .swiper-slide:nth-child(3) {
+    background-image: url('../image/emp_lists.png');
+}
+.projects .works .php_emp .swiper-wrapper .swiper-slide:nth-child(4) {
+    background-image: url('../image/emp_projs.png');
+}
+.projects .works .php_emp .swiper-wrapper .swiper-slide:nth-child(5) {
+    background-image: url('../image/emp_userlanding.png');
+}
+/* 3rd Project */
+.projects .works .capstone .swiper-wrapper .swiper-slide:nth-child(1) {
+    background-image: url('../image/caps_newacc.png');
+}
+.projects .works .capstone .swiper-wrapper .swiper-slide:nth-child(2) {
+    background-image: url('../image/caps_selectdevice.png');
+}
+.projects .works .capstone .swiper-wrapper .swiper-slide:nth-child(3) {
+    background-image: url('../image/caps_dashboard.png');
+}
+.projects .works .capstone .swiper-wrapper .swiper-slide:nth-child(4) {
+    background-image: url('../image/caps_test.png');
+}
+/* 4th Project */
+.projects .works .tetra .swiper-wrapper .swiper-slide:nth-child(1) {
+    background-image: url('../image/tetra_login.png');
+}
+.projects .works .tetra .swiper-wrapper .swiper-slide:nth-child(2) {
+    background-image: url('../image/tetra_dashboard.png');
+}
+.projects .works .tetra .swiper-wrapper .swiper-slide:nth-child(3) {
+    background-image: url('../image/tetra_dashboard2.png');
+}
+.projects .works .tetra .swiper-wrapper .swiper-slide:nth-child(4) {
+    background-image: url('../image/tetra_contact.png');
 }
