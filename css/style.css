@@ -12,7 +12,6 @@
 }
 html {
   scroll-behavior: smooth;
-  scroll-margin-top: 80px;
 }
 #projects, #about {
   scroll-margin-top: 8vh; /* Adjust based on your navbar height */
@@ -32,10 +31,12 @@ body {
     z-index: -1;
 }
 header {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 12vh;   
+    height: 12vh;
+    width: 100vw;
 }
 header .logo {
     font-size: 1.75rem;
@@ -115,6 +116,9 @@ header nav ul a:hover{
 .main .intro h2 video {
     width: 60px;
     height: 60px;
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-drag: none;
 }
 .main .intro h1 {
     margin-top: 20px;
@@ -172,7 +176,6 @@ header nav ul a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 18px;
     font-size: 22px;
     font-weight: bold;
     color: #fff;
@@ -206,9 +209,6 @@ header nav ul a:hover{
     padding-top: 40px;
     margin-left: 560px;
     width: 330px;
-}
-.projects .works .description h2 {
-    
 }
 .projects .works .description p {
     margin-top: 10px;
@@ -282,7 +282,6 @@ header nav ul a:hover{
 .about .about_content {
     position: relative;
     display: flex;
-    
 }
 .about .about_content .personal {
     position: relative;
@@ -407,3 +406,126 @@ footer .copyright {
   font-size: 14px;
   color: #888;
 }
+.option {
+    display: none;
+    opacity: 0; 
+}
+.close {
+    display: none;
+    opacity: 0;
+}
+@media screen and (max-width: 1190px) {
+    .main .robot {
+        top: -120px;
+        left: -350px;
+    }
+    .main {
+        flex-direction: column;
+        height: auto;
+    }
+    .main .intro {
+        width: 70%;
+    }
+}
+@media screen and (max-width: 1105px) {
+    .main {
+        flex-direction: column;
+        height: auto;
+    }
+    .main .intro {
+        width: 80%;
+    }
+    .main .robot-container {
+        opacity: 0;
+        z-index: -1;
+    }
+    .projects .works {
+        height: 600px;
+    }
+    .projects .works .swiper {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .projects .works .description {
+        padding-top: 310px;
+        margin: auto;
+        width: 330px;
+        text-align: center;
+    }
+    .projects .works:nth-child(odd) .swiper {
+        left: 50%;
+        transform: translateX(-50%);
+        right: 0;
+    }
+    .projects .works:nth-child(odd) .description {
+        margin: auto;
+    }
+    .about .about_content {
+        flex-direction: column;
+    }
+    .about .about_content .personal {
+        width: 100%;
+        letter-spacing: .8px;
+        padding: 0 36px 0 16px;
+    }
+    .about .about_content .skills {
+        width: 80%;
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width: 780px) {
+    header .logo {
+        margin-left: 20px;
+    }
+    .option{
+        display: inline;
+        font-size: 1.25rem;
+        margin-right: 20px;
+        cursor: pointer;
+        opacity: 1;
+    }
+    .close{
+        position: absolute;
+        display: inline;
+        top: 30px;
+        cursor: pointer;
+        opacity: 1;
+    }
+    header nav {
+        position: absolute;
+        flex-direction: column;
+        bottom: 100%;
+        left: calc(100% - 140px);
+        width: 140px;
+        height: 240px;
+        padding: 50px 0 0 20px;
+        background-color: #7E2EA0;
+        transition: all .4s;
+        z-index: 3;
+    }
+    .main .intro {
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 60px;
+    }
+    .main .intro h2 {
+        font-size: 1rem;
+        margin-top: 20px;
+    }
+    .main .intro h1 {
+        margin-top: 20px;
+        font-size: 2rem;
+    }
+    .projects .works .swiper {
+        width: 360px;
+        height: 240px;
+    }
+    .about .about_content .personal {
+        padding: 0 0 0 16px;
+    }
+    .about .about_content .skills {
+        width: 100%;
+        font-size: .75rem;
+    }
+}
+
