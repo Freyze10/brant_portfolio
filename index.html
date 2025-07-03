@@ -20,13 +20,13 @@
             BrantBytes
         </div>
         <nav>
-            <ul>Home</ul>
-            <ul>Projects</ul>
-            <ul>Story</ul>
+            <ul><a href="#home">Home</a></ul>
+            <ul><a href="#projects">Projects</a></ul>
+            <ul><a href="#about">About</a></ul>
         </nav>
     </header>
     <div class="content">
-        <div class="main">
+        <div class="main" id="home">
             <div class="intro">
                 <h2>
                     <div class="typing">Hey! I'm <span class="pink-color">Brant Jan</span></div>
@@ -52,7 +52,7 @@
                 <spline-viewer url="https://prod.spline.design/N2OzAet7zTFHsXAH/scene.splinecode" class="robot"></spline-viewer>
             </div>
         </div>
-        <div class="projects">
+        <div class="projects" id="projects">
             <h1 data-aos="fade-right">
                 Some Projects   
             </h1>
@@ -71,7 +71,8 @@
                         Java Application
                     </h2>
                     <p>
-                        A powerful Java-based product ordering application integrated with QR code technology, designed for efficient data processing 
+                        A powerful Java-based product ordering application integrated with QR code 
+                        technology, designed for efficient data processing 
                     </p>
                     <div class="prog_lang">
                         <span>Java</span>
@@ -94,7 +95,8 @@
                         Employee Management
                     </h2>
                     <p>
-                        A PHP and MySQL-based system to manage employee records, track attendance, and streamline administrative tasks.
+                        A PHP and MySQL-based system to manage employee records, track attendance, 
+                        and streamline administrative tasks.
                     </p>
                     <div class="prog_lang">
                         <span>PHP</span>
@@ -117,7 +119,8 @@
                         Real-time Water Quality Monitoring w/ Arduino
                     </h2>
                     <p>
-                        An innovative system using Arduino and multiple sensors to monitor water quality parameters in real-time, with data visualization for actionable insights.
+                        An innovative system using Arduino and multiple sensors to monitor water 
+                        quality parameters in real-time, with data visualization for actionable insights.
                     </p>
                     <div class="prog_lang">
                         <span>PHP</span>
@@ -127,7 +130,7 @@
                     </div>
                 </div>
             </div>
-            <div class="works" >
+            <div class="works" data-aos="zoom-out-up">
                 <div class="swiper mySwiper tetra">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide"></div>
@@ -141,7 +144,9 @@
                         E-commerce Web App
                     </h2>
                     <p>
-                        Visually engaging e-commerce platform developed with HTML, CSS, and JavaScript, showcasing products with interactive features and user-friendly navigation.
+                        Visually engaging e-commerce platform developed with HTML, CSS, and 
+                        JavaScript, showcasing products with interactive features and user-friendly 
+                        navigation.
                     </p>
                     <div class="prog_lang">
                         <span>HTML</span>
@@ -151,6 +156,68 @@
                 </div>
             </div>
         </div>
+        <div class="about" id="about">
+            <h1>About Me</h1>
+            <div class="about_content">
+                <div class="personal">
+                    <h2>Get to know me!</h2>
+                    <div>
+                        <p data-aos="fade-up-right">
+                            Hi, I'm Brant Jan — a <b>Software Developer</b> with a passion for building clean, 
+                            responsive, and user-focused web applications. I enjoy solving problems through
+                            code and creating digital experiences that are both functional and visually engaging.
+                        </p>
+                        <p data-aos="fade-up-right">
+                            My strengths lie in front-end development, but I’m also familiar with backend 
+                            logic and database management. I value writing code that’s not just efficient, but 
+                            also easy to maintain and scale. I believe every project is an opportunity to learn 
+                            and improve. 
+                        </p>
+                        <p data-aos="fade-up-right">
+                            I’m currently open to opportunities where I can contribute, grow, and collaborate 
+                            with a team that values quality and innovation. If you're looking for someone who’s
+                            dedicated, adaptable, and ready to add value, feel free to reach out.
+                        </p>
+                    </div>
+                    <div class="btn_contact" >
+                        <button class="btn" onclick="window.open('resume/Abillanoza, Brant Jan (cv) .pdf', '_blank')">View Resume</button>
+                    </div>
+                </div>
+                <div class="skills">
+                    <h2>Skills</h2>
+                    <div class="skills_list" data-aos="fade-left">
+                        <div>HTML</div>
+                        <div>CSS</div>
+                        <div>JavaScript</div>
+                        <div>PHP</div>
+                        <div>MySQL</div>
+                        <div>Java</div>
+                        <div>Python</div>
+                        <div>C++</div>
+                        <div>Git</div>
+                        <div>Github</div>
+                        <div>Problem Solving</div>
+                        <div>Technichal Support</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-content">
+                <h3>BrantBytes</h3>
+                <p>Passionate about building responsive and user-centered web experiences.</p>
+                <p> Let’s connect: </p>
+                <div class="social-links">
+                <a href="https://github.com/yourusername" target="_blank">GitHub</a> |
+                <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a> |
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=bjabillanoza@gmail.com" 
+                    target="_blank">
+                        Gmail
+                </a>
+                </div>
+                <p class="copyright">© 2025 Brant Jan Abillanoza. All rights reserved.</p>
+            </div>
+        </footer>
     </div>
     <script>
         AOS.init();

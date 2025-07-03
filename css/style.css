@@ -10,6 +10,13 @@
     --pink: rgb(234, 114, 176);
     --border: 1px solid white;
 }
+html {
+  scroll-behavior: smooth;
+  scroll-margin-top: 80px;
+}
+#projects, #about {
+  scroll-margin-top: 8vh; /* Adjust based on your navbar height */
+}
 body {
     background-color: rgb(0, 0, 0);
     color: white;
@@ -45,6 +52,14 @@ header nav {
 }
 header nav ul {
     cursor: pointer;
+}
+header nav ul a{
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+header nav ul a:hover{
+    color: var(--pink);
 }
 .content {
     width: 100vw;
@@ -131,12 +146,12 @@ header nav ul {
     top: -120px;
     left: -450px;
 }
-.projects {
+.projects, .about {
     position: relative;
     width: 88%;
     margin: auto;
 }
-.projects h1 {
+.projects h1, .about h1 {
     letter-spacing: 2px;
     margin: 60px 0 70px;
     width: fit-content;
@@ -260,4 +275,135 @@ header nav ul {
 }
 .projects .works .tetra .swiper-wrapper .swiper-slide:nth-child(4) {
     background-image: url('../image/tetra_contact.png');
+}
+.about {
+    margin-bottom: 40px;
+}
+.about .about_content {
+    position: relative;
+    display: flex;
+    
+}
+.about .about_content .personal {
+    position: relative;
+    width: 60%;
+    line-height: 2;
+    letter-spacing: .5px;
+    padding: 0 36px 0 16px;
+}
+.about .about_content .personal h2,
+.about .about_content .skills h2 {
+    padding-bottom: 26px;
+}
+.about .about_content .personal div {
+    padding-right: 10%;
+}
+.about .about_content .personal div p {
+    padding-bottom: 10px;
+}
+.about .about_content .personal .btn_contact {
+    margin-top: 30px;
+}
+/* From Uiverse.io by SujitAdroja */ 
+.about .about_content .personal .btn_contact .btn {
+    color: var(--pink);
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid var(--pink);
+    padding: 10px 20px;
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: bold;
+    background: transparent;
+    position: relative;
+    transition: all .5s;
+    overflow: hidden;
+}
+.about .about_content .personal .btn_contact .btn:hover {
+    color: white;
+}
+.about .about_content .personal .btn_contact .btn::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: -40px;
+    transform: skewX(45deg);
+    background-color: var(--pink);
+    z-index: -1;
+    transition: all .5s;
+}
+.about .about_content .personal .btn_contact .btn:hover::before {
+    width: 160%;
+}
+.about .about_content .skills {
+    position: relative;
+    width: 40%;
+}
+.about .about_content .skills .skills_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+.about .about_content .skills .skills_list div {
+    display: inline-block;
+    letter-spacing: 1px;
+    padding: 6px 18px;
+    border: 2px solid var(--pink);
+    border-radius: 4px;
+}
+footer {
+  background-color: #101010;
+  color: #ffffff;
+  text-align: center;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: auto;
+}
+
+.footer-content h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: var(--pink); /* Optional: if you use a custom variable */
+}
+
+.footer-content p {
+  font-size: 16px;
+  margin: 8px 0;
+}
+
+.footer-content a {
+  color: var(--pink); /* Light pink, change as needed */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}
+
+.social-links {
+  margin: 15px 0;
+}
+
+.social-links a {
+  margin: 0 10px;
+  color: #ddd;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: var(--pink);
+}
+
+footer .copyright {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #888;
 }
