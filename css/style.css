@@ -234,7 +234,23 @@ header nav ul a:hover{
     margin-left: calc(100% - (560px + 330px));
 }
 
-/* 2nd Project */
+/* Travlog */
+.projects .works .travlog .swiper-wrapper .swiper-slide:nth-child(1) {
+    background-image: url('../image/trav_home.png');
+}
+.projects .works .travlog .swiper-wrapper .swiper-slide:nth-child(2) {
+    background-image: url('../image/trav_services.png');
+}
+.projects .works .travlog .swiper-wrapper .swiper-slide:nth-child(3) {
+    background-image: url('../image/trav_point.png');
+}
+.projects .works .travlog .swiper-wrapper .swiper-slide:nth-child(4) {
+    background-image: url('../image/trav_features.png');
+}
+.projects .works .travlog .swiper-wrapper .swiper-slide:nth-child(5) {
+    background-image: url('../image/trav_testimonials.png');
+}
+/* Employee */
 .projects .works .php_emp .swiper-wrapper .swiper-slide:nth-child(1) {
     background-image: url('../image/emp_login.png');
 }
@@ -250,7 +266,7 @@ header nav ul a:hover{
 .projects .works .php_emp .swiper-wrapper .swiper-slide:nth-child(5) {
     background-image: url('../image/emp_userlanding.png');
 }
-/* 3rd Project */
+/* Capstone */
 .projects .works .capstone .swiper-wrapper .swiper-slide:nth-child(1) {
     background-image: url('../image/caps_newacc.png');
 }
@@ -414,20 +430,7 @@ footer .copyright {
     display: none;
     opacity: 0;
 }
-@media screen and (max-width: 1190px) {
-    .main .robot {
-        top: -120px;
-        left: -350px;
-    }
-    .main {
-        flex-direction: column;
-        height: auto;
-    }
-    .main .intro {
-        width: 70%;
-    }
-}
-@media screen and (max-width: 1105px) {
+@media screen and (max-width: 1155px) {
     .main {
         flex-direction: column;
         height: auto;
