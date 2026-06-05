@@ -1,259 +1,255 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BrantBytes</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="js/main.js"></script>
-    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.16/build/spline-viewer.js"></script>
-    <script src="https://kit.fontawesome.com/1c6db54935.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Brant Jan | Software Developer Portfolio</title>
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/1c6db54935.js" crossorigin="anonymous"></script>
+
+  <!-- Plugins -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="bg-star"></div>
-    <header>
-        <div class="logo">
-            BrantBytes
-        </div>
-        <i class="fa-solid fa-bars option" onclick="openNav()"></i>
-        <nav>
-            <i class="fa-solid fa-xmark close" onclick="closeNav()"></i>
-            <ul><a href="#home">Home</a></ul>
-            <ul><a href="#projects">Projects</a></ul>
-            <ul><a href="#about">About</a></ul>
-        </nav>
-    </header>
-    <div class="content">
-        <div class="main" id="home">
-            <div class="intro">
-                <h2>
-                    <div class="typing">Hey! I'm <span class="pink-color">Brant Jan</span></div>
-                    <video autoplay loop muted playsinline>
-                        <source src="image/wave.webm" type="video/webm">
-                    </video>
-                </h2>
-                <h1>Software <span class="pink-color">Developer</span> Specializing in Modern <span class="pink-color">Web Solutions</span></h1>
-                <h2>Building dynamic and responsive websites</h2>
-                <div class="socials">
-                    <a href="https://www.facebook.com/share/1B4D7RWF6u/?mibextid=wwXIfr" target="_blank">
-                        <i class="fa-brands fa-square-facebook"></i>
-                    </a>
-                    <a href="https://github.com/Freyze10" target="_blank">
-                        <i class="fa-brands fa-square-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/brant10/" target="_blank">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="robot-container">
-                <spline-viewer url="https://prod.spline.design/N2OzAet7zTFHsXAH/scene.splinecode" class="robot"></spline-viewer>
-            </div>
-        </div>
-        <div class="projects" id="projects">
-            <h1 data-aos="fade-right">
-                Some Projects   
-            </h1>
-            <div class="works" data-aos="zoom-in">
-                <div class="swiper mySwiper java_proj">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"></div>
-                        <div class="swiper-slide"></div>
-                        <div class="swiper-slide"></div>
-                        <div class="swiper-slide"></div>
-                        <div class="swiper-slide"></div>
-                    </div>
-                </div>
-                <div class="description">
-                    <h2>
-                        Java Application
-                    </h2>
-                    <p>
-                        A powerful Java-based product ordering application integrated with QR code 
-                        technology, designed for efficient data processing 
-                    </p>
-                    <div class="prog_lang">
-                        <span>Java</span>
-                        <span>MySQL</span>
-                    </div>
-                </div>
-            </div>
-            <div class="works" data-aos="zoom-out-up">
-                <div class="swiper mySwiper travlog">  
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"></div>
-                        <div class="swiper-slide"></div>
-                        <div class="swiper-slide"></div>
-                        <div class="swiper-slide"></div>
-                        <div class="swiper-slide"></div>
-                    </div>
-                </div>
-                <div class="description">
-                    <h2>
-                        Responsive Front-End
-                    </h2>
-                    <p>
-                        A clean and modern static website, showcasing responsive design principles, organized layouts, and aesthetic visual elements.
-                    </p>
-                    <div class="prog_lang">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                    </div>
-                </div>
-            </div>
-            <div class="works" data-aos="zoom-out-up">
-                <div class="swiper mySwiper php_emp">  
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"></div>
-                        <div class="swiper-slide"></div>
-                        <div class="swiper-slide"></div>
-                        <div class="swiper-slide"></div>
-                        <div class="swiper-slide"></div>
-                    </div>
-                </div>
-                <div class="description">
-                    <h2>
-                        Employee Management
-                    </h2>
-                    <p>
-                        A PHP and MySQL-based system to manage employee records, track attendance, 
-                        and streamline administrative tasks.
-                    </p>
-                    <div class="prog_lang">
-                        <span>PHP</span>
-                        <span>MySQL</span>
-                        <span>JavaScript</span>
-                    </div>
-                </div>
-            </div>
-            <div class="works" data-aos="zoom-out-up">
-                <div class="swiper mySwiper capstone">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"></div>
-                        <div class="swiper-slide"></div>
-                        <div class="swiper-slide"></div>
-                        <div class="swiper-slide"></div>
-                    </div>
-                </div>
-                <div class="description">
-                    <h2>
-                        Real-time Water Quality Monitoring w/ Arduino
-                    </h2>
-                    <p>
-                        An innovative system using Arduino and multiple sensors to monitor water 
-                        quality parameters in real-time, with data visualization for actionable insights.
-                    </p>
-                    <div class="prog_lang">
-                        <span>PHP</span>
-                        <span>C#</span>
-                        <span>MySQL</span>
-                        <span>JavaScript</span>
-                    </div>
-                </div>
-            </div>
-            <div class="works" data-aos="zoom-out-up">
-                <div class="swiper mySwiper tetra">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"></div>
-                        <div class="swiper-slide"></div>
-                        <div class="swiper-slide"></div>
-                        <div class="swiper-slide"></div>
-                    </div>
-                </div>
-                <div class="description">
-                    <h2>
-                        E-commerce Web App
-                    </h2>
-                    <p>
-                        Visually engaging e-commerce platform developed with HTML, CSS, and 
-                        JavaScript, showcasing products with interactive features and user-friendly 
-                        navigation.
-                    </p>
-                    <div class="prog_lang">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="about" id="about">
-            <h1>About Me</h1>
-            <div class="about_content">
-                <div class="personal">
-                    <h2>Get to know me!</h2>
-                    <div>
-                        <p data-aos="fade-up-right">
-                            Hi, I'm Brant Jan — a <b>Software Developer</b> with a passion for building clean, 
-                            responsive, and user-focused web applications. I enjoy solving problems through
-                            code and creating digital experiences that are both functional and visually engaging.
-                        </p>
-                        <p data-aos="fade-up-right">
-                            My strengths lie in front-end development, but I’m also familiar with backend 
-                            logic and database management. I value writing code that’s not just efficient, but 
-                            also easy to maintain and scale. I believe every project is an opportunity to learn 
-                            and improve. 
-                        </p>
-                        <p data-aos="fade-up-right">
-                            I’m currently open to opportunities where I can contribute, grow, and collaborate 
-                            with a team that values quality and innovation. If you're looking for someone who’s
-                            dedicated, adaptable, and ready to add value, feel free to reach out.
-                        </p>
-                    </div>
-                    <div class="btn_contact" >
-                        <button class="btn" onclick="window.open('resume/Abillanoza, Brant Jan (cv) .pdf', '_blank')">View Resume</button>
-                    </div>
-                </div>
-                <div class="skills">
-                    <h2>Skills</h2>
-                    <div class="skills_list" data-aos="fade-left">
-                        <div>HTML</div>
-                        <div>CSS</div>
-                        <div>JavaScript</div>
-                        <div>PHP</div>
-                        <div>MySQL</div>
-                        <div>Java</div>
-                        <div>Python</div>
-                        <div>C++</div>
-                        <div>Git</div>
-                        <div>Github</div>
-                        <div>Problem Solving</div>
-                        <div>Technichal Support</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <footer>
-            <div class="footer-content">
-                <h3>BrantBytes</h3>
-                <p>Passionate about building responsive and user-centered web experiences.</p>
-                <p> Let’s connect: </p>
-                <div class="social-links">
-                <a href="https://github.com/yourusername" target="_blank">GitHub</a> |
-                <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a> |
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=bjabillanoza@gmail.com" 
-                    target="_blank">
-                        Gmail
-                </a>
-                </div>
-                <p class="copyright">© 2025 Brant Jan Abillanoza. All rights reserved.</p>
-            </div>
-        </footer>
+
+  <!-- NAVBAR -->
+  <header id="header">
+    <div class="container nav-container">
+      <a href="#home" class="logo">{Brant<span>Bytes</span>}</a>
+      
+      <nav id="nav-menu">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link nav-cta">Contact</a>
+      </nav>
+
+      <div class="nav-right">
+        <button id="theme-toggle" aria-label="Toggle Theme">
+          <i class="fa-solid fa-circle-half-stroke"></i>
+        </button>
+        <a href="https://github.com/Freyze10" target="_blank" class="nav-git"><i class="fa-brands fa-github"></i></a>
+        <div class="hamburger" id="hamburger"><span></span><span></span></div>
+      </div>
     </div>
-    <script>
-        AOS.init();
-        var swiper = new Swiper(".mySwiper", {
-            effect: "cards",
-            grabCursor: true,
-            autoplay: {
-                delay: 800,
-                disableOnInteraction: false,
-            },  
-        });
-    </script>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-wrapper">
+        <div class="hero-content" data-aos="fade-right">
+          <div class="hero-badge"><span class="dot"></span> Available for Projects</div>
+          <h1>Building <br><span class="typewriter-text accent"></span></h1>
+          <p class="hero-desc">I'm Brant Jan, a Software Developer specializing in full-stack web applications, Python automation, and IoT systems.</p>
+          <div class="hero-btns">
+            <a href="#projects" class="btn btn-primary">See My Work</a>
+            <a href="https://github.com/Freyze10" target="_blank" class="btn btn-secondary"><i class="fa-brands fa-github"></i> GitHub</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" data-aos="zoom-in">
+          <div class="code-card">
+            <div class="card-header">
+              <span class="dot-btn red"></span><span class="dot-btn yellow"></span><span class="dot-btn green"></span>
+            </div>
+            <div class="card-body">
+              <pre><code><span class="keyword">const</span> <span class="variable">developer</span> = {
+  name: <span class="string">'Brant Jan'</span>,
+  skills: [<span class="string">'PHP'</span>, <span class="string">'JS'</span>, <span class="string">'Python'</span>, <span class="string">'Java'</span>],
+  hardWorker: <span class="keyword">true</span>,
+  problemSolver: <span class="keyword">true</span>,
+  message: <span class="string">'Ready to build!'</span>
+};</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section class="projects-section" id="projects">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2>Technical Portfolio</h2>
+        <p>A collection of software solutions across multiple languages.</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- PROJECT 01: Java QR Ordering -->
+        <article class="project-card" data-aos="fade-up">
+          <div class="pc-image">
+            <div class="swiper pc-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image:url('image/java_login.png')"></div>
+                <div class="swiper-slide" style="background-image:url('image/java_menu.png')"></div>
+                <div class="swiper-slide" style="background-image:url('image/java_receipt.png')"></div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="pc-body">
+            <div class="pc-tags">
+              <span class="tag tag-java"><i class="fa-brands fa-java"></i> Java</span>
+              <span class="tag tag-db">MySQL</span>
+            </div>
+            <h3>QR Ordering App</h3>
+            <p>Integrated with QR technology for automated product data processing and seamless digital receipting.</p>
+            <a href="https://github.com/Freyze10" target="_blank" class="pc-link">View Repo <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <!-- PROJECT 02: TravLog -->
+        <article class="project-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="pc-image">
+            <div class="swiper pc-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image:url('image/trav_home.png')"></div>
+                <div class="swiper-slide" style="background-image:url('image/trav_features.png')"></div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="pc-body">
+            <div class="pc-tags">
+              <span class="tag tag-html">HTML5</span>
+              <span class="tag tag-css">CSS3</span>
+            </div>
+            <h3>TravLog Landing Page</h3>
+            <p>Modern responsive travel platform with high-fidelity UI and smooth content navigation.</p>
+            <a href="https://github.com/Freyze10" target="_blank" class="pc-link">View Repo <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <!-- PROJECT 03: HR System -->
+        <article class="project-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="pc-image">
+            <div class="swiper pc-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image:url('image/emp_landing.png')"></div>
+                <div class="swiper-slide" style="background-image:url('image/emp_lists.png')"></div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="pc-body">
+            <div class="pc-tags">
+              <span class="tag tag-php"><i class="fa-brands fa-php"></i> PHP</span>
+              <span class="tag tag-db">MySQL</span>
+              <span class="tag tag-js">JS</span>
+            </div>
+            <h3>HR Management System</h3>
+            <p>Comprehensive employee tracking system with record management and attendance logging.</p>
+            <a href="https://github.com/Freyze10" target="_blank" class="pc-link">View Repo <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <!-- PROJECT 04: Water Monitor (IoT) -->
+        <article class="project-card" data-aos="fade-up">
+          <div class="pc-image">
+            <div class="swiper pc-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image:url('image/caps_dashboard.png')"></div>
+                <div class="swiper-slide" style="background-image:url('image/caps_test.png')"></div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="pc-body">
+            <div class="pc-tags">
+              <span class="tag tag-iot"><i class="fa-solid fa-microchip"></i> IoT</span>
+              <span class="tag tag-php">PHP</span>
+              <span class="tag tag-csharp">C#</span>
+            </div>
+            <h3>IoT Water Quality Monitor</h3>
+            <p>Live remote monitoring dashboard visualizing real-time sensor data from Arduino hardware.</p>
+            <a href="https://github.com/Freyze10" target="_blank" class="pc-link">View Repo <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <!-- PROJECT 05: Tetra Ecommerce -->
+        <article class="project-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="pc-image">
+            <div class="swiper pc-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image:url('image/tetra_dashboard.png')"></div>
+                <div class="swiper-slide" style="background-image:url('image/tetra_dashboard2.png')"></div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="pc-body">
+            <div class="pc-tags">
+              <span class="tag tag-html">HTML</span>
+              <span class="tag tag-css">CSS</span>
+              <span class="tag tag-js">JS</span>
+            </div>
+            <h3>Tetra E-Commerce UI</h3>
+            <p>Advanced shop interface featuring a focused user journey and modern visual aesthetics.</p>
+            <a href="https://github.com/Freyze10" target="_blank" class="pc-link">View Repo <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2>Expertise & Skills</h2>
+        <p>A comprehensive overview of my technical toolbelt.</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-box"><i class="fa-brands fa-python"></i> Python Development</div>
+        <div class="skill-box"><i class="fa-brands fa-java"></i> Java Programming</div>
+        <div class="skill-box"><i class="fa-brands fa-php"></i> Backend (PHP)</div>
+        <div class="skill-box"><i class="fa-brands fa-js"></i> JavaScript (ES6)</div>
+        <div class="skill-box"><i class="fa-solid fa-database"></i> Database (MySQL)</div>
+        <div class="skill-box"><i class="fa-solid fa-microchip"></i> Arduino & IoT</div>
+        <div class="skill-box"><i class="fa-brands fa-html5"></i> HTML5/CSS3</div>
+        <div class="skill-box"><i class="fa-brands fa-git-alt"></i> Version Control (Git)</div>
+        <div class="skill-box"><i class="fa-solid fa-code"></i> C++/C#</div>
+        <div class="skill-box"><i class="fa-solid fa-bug-slash"></i> Debugging & Testing</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-card" data-aos="zoom-in">
+        <h2>Let's build something next.</h2>
+        <p>I'm currently looking for new opportunities. My inbox is always open.</p>
+        <div class="contact-btns">
+          <a href="mailto:bjabillanoza@gmail.com" class="btn btn-primary">Send an Email</a>
+          <div class="contact-socials">
+            <a href="https://github.com/Freyze10" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/brant10/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Brant Jan Abillanoza. <a href="https://github.com/Freyze10" target="_blank">GitHub Profile</a></p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
