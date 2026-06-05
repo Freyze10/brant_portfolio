@@ -36,7 +36,11 @@
           <i class="fa-solid fa-circle-half-stroke"></i>
         </button>
         <a href="https://github.com/Freyze10" target="_blank" class="nav-git"><i class="fa-brands fa-github"></i></a>
-        <div class="hamburger" id="hamburger"><span></span><span></span></div>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     </div>
   </header>
@@ -59,11 +63,12 @@
           <div class="code-card">
             <div class="card-header">
               <span class="dot-btn red"></span><span class="dot-btn yellow"></span><span class="dot-btn green"></span>
+              <span class="card-title">developer.js</span>
             </div>
             <div class="card-body">
               <pre><code><span class="keyword">const</span> <span class="variable">developer</span> = {
   name: <span class="string">'Brant Jan'</span>,
-  skills: [<span class="string">'PHP'</span>, <span class="string">'JS'</span>, <span class="string">'Python'</span>, <span class="string">'Java'</span>],
+  skills: [<span class="string">'PHP'</span>, <span class="string">'JS'</span>, <span class="string">'Python'</span>],
   hardWorker: <span class="keyword">true</span>,
   problemSolver: <span class="keyword">true</span>,
   message: <span class="string">'Ready to build!'</span>
@@ -79,7 +84,8 @@
   <section class="projects-section" id="projects">
     <div class="container">
       <div class="section-header" data-aos="fade-up">
-        <h2>Technical Portfolio</h2>
+        <span class="badge">Portfolio</span>
+        <h2>Technical Work</h2>
         <p>A collection of software solutions across multiple languages.</p>
       </div>
 
@@ -98,11 +104,11 @@
           </div>
           <div class="pc-body">
             <div class="pc-tags">
-              <span class="tag tag-java"><i class="fa-brands fa-java"></i> Java</span>
-              <span class="tag tag-db">MySQL</span>
+              <span class="tag"><i class="fa-brands fa-java"></i> Java</span>
+              <span class="tag">MySQL</span>
             </div>
             <h3>QR Ordering App</h3>
-            <p>Integrated with QR technology for automated product data processing and seamless digital receipting.</p>
+            <p>Integrated with QR technology for automated product data processing and digital receipting.</p>
             <a href="https://github.com/Freyze10" target="_blank" class="pc-link">View Repo <i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </article>
@@ -120,8 +126,8 @@
           </div>
           <div class="pc-body">
             <div class="pc-tags">
-              <span class="tag tag-html">HTML5</span>
-              <span class="tag tag-css">CSS3</span>
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
             </div>
             <h3>TravLog Landing Page</h3>
             <p>Modern responsive travel platform with high-fidelity UI and smooth content navigation.</p>
@@ -142,9 +148,8 @@
           </div>
           <div class="pc-body">
             <div class="pc-tags">
-              <span class="tag tag-php"><i class="fa-brands fa-php"></i> PHP</span>
-              <span class="tag tag-db">MySQL</span>
-              <span class="tag tag-js">JS</span>
+              <span class="tag"><i class="fa-brands fa-php"></i> PHP</span>
+              <span class="tag">MySQL</span>
             </div>
             <h3>HR Management System</h3>
             <p>Comprehensive employee tracking system with record management and attendance logging.</p>
@@ -165,9 +170,8 @@
           </div>
           <div class="pc-body">
             <div class="pc-tags">
-              <span class="tag tag-iot"><i class="fa-solid fa-microchip"></i> IoT</span>
-              <span class="tag tag-php">PHP</span>
-              <span class="tag tag-csharp">C#</span>
+              <span class="tag"><i class="fa-solid fa-microchip"></i> IoT</span>
+              <span class="tag">C# / PHP</span>
             </div>
             <h3>IoT Water Quality Monitor</h3>
             <p>Live remote monitoring dashboard visualizing real-time sensor data from Arduino hardware.</p>
@@ -188,9 +192,8 @@
           </div>
           <div class="pc-body">
             <div class="pc-tags">
-              <span class="tag tag-html">HTML</span>
-              <span class="tag tag-css">CSS</span>
-              <span class="tag tag-js">JS</span>
+              <span class="tag">JS</span>
+              <span class="tag">UI/UX</span>
             </div>
             <h3>Tetra E-Commerce UI</h3>
             <p>Advanced shop interface featuring a focused user journey and modern visual aesthetics.</p>
@@ -205,20 +208,24 @@
   <section class="about-section" id="about">
     <div class="container">
       <div class="section-header" data-aos="fade-up">
+        <span class="badge">Tech Stack</span>
         <h2>Expertise & Skills</h2>
         <p>A comprehensive overview of my technical toolbelt.</p>
       </div>
+      
       <div class="skills-grid">
-        <div class="skill-box"><i class="fa-brands fa-python"></i> Python Development</div>
-        <div class="skill-box"><i class="fa-brands fa-java"></i> Java Programming</div>
-        <div class="skill-box"><i class="fa-brands fa-php"></i> Backend (PHP)</div>
-        <div class="skill-box"><i class="fa-brands fa-js"></i> JavaScript (ES6)</div>
-        <div class="skill-box"><i class="fa-solid fa-database"></i> Database (MySQL)</div>
-        <div class="skill-box"><i class="fa-solid fa-microchip"></i> Arduino & IoT</div>
-        <div class="skill-box"><i class="fa-brands fa-html5"></i> HTML5/CSS3</div>
-        <div class="skill-box"><i class="fa-brands fa-git-alt"></i> Version Control (Git)</div>
-        <div class="skill-box"><i class="fa-solid fa-code"></i> C++/C#</div>
-        <div class="skill-box"><i class="fa-solid fa-bug-slash"></i> Debugging & Testing</div>
+        <div class="skill-box" data-aos="zoom-in"><i class="fa-brands fa-python"></i><span>Python</span></div>
+        <div class="skill-box" data-aos="zoom-in" data-aos-delay="50"><i class="fa-brands fa-java"></i><span>Java</span></div>
+        <div class="skill-box" data-aos="zoom-in" data-aos-delay="100"><i class="fa-brands fa-php"></i><span>PHP / Laravel</span></div>
+        <div class="skill-box" data-aos="zoom-in" data-aos-delay="150"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+        <div class="skill-box" data-aos="zoom-in"><i class="fa-brands fa-react"></i><span>React.js</span></div>
+        <div class="skill-box" data-aos="zoom-in"><i class="fa-brands fa-node-js"></i><span>Node.js</span></div>
+        <div class="skill-box" data-aos="zoom-in"><i class="fa-solid fa-database"></i><span>MySQL / NoSQL</span></div>
+        <div class="skill-box" data-aos="zoom-in"><i class="fa-solid fa-microchip"></i><span>IoT & Arduino</span></div>
+        <div class="skill-box" data-aos="zoom-in"><i class="fa-brands fa-git-alt"></i><span>Git & GitHub</span></div>
+        <div class="skill-box" data-aos="zoom-in"><i class="fa-brands fa-docker"></i><span>Docker</span></div>
+        <div class="skill-box" data-aos="zoom-in"><i class="fa-solid fa-cloud"></i><span>Firebase</span></div>
+        <div class="skill-box" data-aos="zoom-in"><i class="fa-solid fa-terminal"></i><span>Linux/Bash</span></div>
       </div>
     </div>
   </section>
@@ -242,7 +249,7 @@
 
   <footer>
     <div class="container">
-      <p>&copy; 2025 Brant Jan Abillanoza. <a href="https://github.com/Freyze10" target="_blank">GitHub Profile</a></p>
+      <p>&copy; 2025 Brant Jan Abillanoza. Built with Passion.</p>
     </div>
   </footer>
 
