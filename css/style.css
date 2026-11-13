@@ -36,7 +36,7 @@ section[id] { scroll-margin-top: 70px; }
 #header { position: fixed; top: 0; width: 100%; z-index: 1000; padding: 20px 0; transition: var(--transition); }
 #header.scrolled { background: var(--glass); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); padding: 12px 0; }
 .nav-container { display: flex; justify-content: space-between; align-items: center; }
-.logo { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.5rem; }
+.logo { font-family: 'Syne', sans-serif; font-weight: 800; font-size: clamp(1.1rem, 5.2vw, 1.5rem); white-space: nowrap; }
 .logo span { color: var(--primary); }
 
 #nav-menu { display: flex; gap: 25px; }
@@ -143,6 +143,15 @@ section[id] { scroll-margin-top: 70px; }
 /* Footer */
 footer { padding: 40px 0; border-top: 1px solid var(--border); text-align: center; font-size: 0.9rem; color: var(--text-dim); }
 
+/* Image viewer (double-click / double-tap a screenshot) */
+.hint { font-size: 0.8rem; margin-top: 8px; }
+.pc-swiper .swiper-slide { cursor: zoom-in; touch-action: manipulation; }
+.lightbox { position: fixed; inset: 0; z-index: 2000; background: rgba(0, 0, 0, 0.92); display: none; overflow: auto; padding: 20px; }
+.lightbox.open { display: flex; }
+.lightbox img { max-width: 100%; max-height: 100%; margin: auto; border-radius: 8px; cursor: zoom-in; }
+.lightbox.zoomed img { max-width: none; max-height: none; width: 200%; margin: 0; cursor: zoom-out; }
+.lb-close { position: fixed; top: 16px; right: 16px; z-index: 2001; width: 42px; height: 42px; border-radius: 50%; border: none; background: rgba(255, 255, 255, 0.18); color: #fff; font-size: 1.3rem; cursor: pointer; }
+
 /* Tablet and mobile */
 @media (max-width: 992px) {
   .hero { min-height: auto; padding: 110px 0 60px; }
@@ -160,6 +169,7 @@ footer { padding: 40px 0; border-top: 1px solid var(--border); text-align: cente
 }
 @media (max-width: 600px) {
   .container { padding: 0 18px; }
+  .nav-right { gap: 14px; }
   .projects-section, .about-section, .contact-section { padding: 70px 0; }
   .section-header { margin-bottom: 40px; }
   .code-card { padding: 18px; font-size: 0.8rem; }

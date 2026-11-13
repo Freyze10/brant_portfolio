@@ -56,4 +56,51 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // 7. Image viewer: double-click (desktop) or double-tap (phone) a screenshot to enlarge it
+  const hintAnchor = document.querySelector('#projects .section-header p');
+  if (hintAnchor) {
+    const hint = document.createElement('p');
+    hint.className = 'hint';
+    hint.innerHTML = '<i class="fa-regular fa-hand-pointer"></i> Double-click (or double-tap) any screenshot to enlarge it.';
+    hintAnchor.after(hint);
+  }
+
+  const box = document.createElement('div');
+  box.className = 'lightbox';
+  box.innerHTML = '<button class="lb-close" aria-label="Close">&times;</button><img alt="">';
+  document.body.appendChild(box);
+  const boxImg = box.querySelector('img');
+
+  const openViewer = slide => {
+    const m = getComputedStyle(slide).backgroundImage.match(/url\(["']?(.*?)["']?\)/);
+    if (!m) return;
+    const card = slide.closest('.project-card');
+    boxImg.src = m[1];
+    boxImg.alt = card ? card.querySelector('h3').textContent : '';
+    box.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  };
+  const closeViewer = () => {
+    box.classList.remove('open', 'zoomed');
+    document.body.style.overflow = '';
+  };
+
+  document.addEventListener('dblclick', e => {
+    const slide = e.target.closest('.pc-swiper .swiper-slide');
+    if (slide) openViewer(slide);
+  });
+
+  let lastTap = 0;
+  document.addEventListener('touchend', e => {
+    const slide = e.target.closest('.pc-swiper .swiper-slide');
+    if (!slide) return;
+    const now = Date.now();
+    if (now - lastTap < 300) { e.preventDefault(); openViewer(slide); }
+    lastTap = now;
+  }, { passive: false });
+
+  boxImg.addEventListener('click', e => { e.stopPropagation(); box.classList.toggle('zoomed'); });
+  box.addEventListener('click', closeViewer);
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeViewer(); });
+
 });
