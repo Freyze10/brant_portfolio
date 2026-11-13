@@ -81,6 +81,8 @@ section[id] { scroll-margin-top: 70px; }
 .btn-secondary { border: 1px solid var(--border); color: var(--text); }
 .btn-secondary:hover { background: var(--border); }
 .btn-light { background: #fff; color: var(--primary); }
+.btn-outline-light { border: 2px solid rgba(255,255,255,0.7); color: #fff; }
+.btn-outline-light:hover { background: rgba(255,255,255,0.15); transform: translateY(-3px); }
 .btn-light:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25); }
 
 /* Section headers */
@@ -132,6 +134,7 @@ section[id] { scroll-margin-top: 70px; }
 .contact-card { background: var(--primary); color: #fff; padding: clamp(36px, 7vw, 60px) 24px; border-radius: 30px; text-align: center; }
 .contact-card h2 { font-family: 'Syne', sans-serif; font-size: clamp(1.6rem, 5vw, 2.4rem); margin-bottom: 14px; }
 .contact-card p { opacity: 0.85; max-width: 480px; margin: 0 auto 32px; }
+.contact-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; }
 .contact-btns { display: flex; flex-direction: column; align-items: center; gap: 28px; }
 .contact-socials { display: flex; gap: 25px; font-size: 1.5rem; }
 .contact-socials a { opacity: 0.85; transition: var(--transition); }
@@ -167,4 +170,5 @@ footer { padding: 40px 0; border-top: 1px solid var(--border); text-align: cente
   .skill-box { padding: 14px; font-size: 0.85rem; gap: 10px; }
   .skill-box i { font-size: 1.2rem; }
   .hero-btns .btn { flex: 1 1 100%; }
+  .contact-actions .btn { flex: 1 1 100%; }
 }
